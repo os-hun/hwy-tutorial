@@ -109,7 +109,7 @@ app.onError((error, c) => {
   return c.text('500 Internal Server Error', 500)
 })
 
-const PORT = process.env.PORT ? Number(process.env.PORT) : 3000
+const PORT = process.env.PORT ? Number(process.env.PORT) : 3001;
 
 serve({ fetch: app.fetch, port: PORT }, (info) => {
   console.log(
